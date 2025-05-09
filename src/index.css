@@ -1,0 +1,40 @@
+@font-face {
+  font-family: 'Poppins-Extra-Bold';
+  src: url(../src/assets/Poppins/Poppins-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: 'Poppins-Thin';
+  src: url(../src/assets/Poppins/Poppins-Thin.ttf);
+}
+
+@font-face {
+  font-family: 'Poppins-Regular';
+  src: url(../src/assets/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Poppins-Bold';
+  src: url(../src/assets/Poppins/Poppins-Bold.ttf);
+}
+
+:root {
+  --cor-primaria: 0, 51, 255;
+  --cor-secundaria: 57, 26, 194;
+  --cor-terciaria: 48, 3, 247;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Poppins-Regular';
+  color: white;
+  background-color: black;
+  overflow-x: hidden;
+}

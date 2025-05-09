@@ -1,0 +1,116 @@
+.header {
+    background-color: rgba(0, 0, 20, 0.9);
+    display: flex;
+    padding: 10px 20px;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    height: auto;
+    box-sizing: border-box;
+    color: white;
+}
+
+.header > p {
+    font-family: 'Poppins-Extra-Bold';
+    font-size: 30px;
+    color: white;
+    margin-left: 0;
+}
+
+.header > p > span {
+    color: rgb(var(--cor-primaria));
+}
+
+.header > nav {
+
+}
+
+.header > nav > ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.header > nav > ul > li > a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 5px 8px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: background-color 0.5s, color 0.5s, border 0.5s;
+    outline: none;
+}
+
+.header > nav > ul > li > a:hover, .header > nav > ul > li > a:focus {
+    background-color: rgb(var(--cor-terciaria));
+    color: white;
+    border-color: transparent;
+}
+
+li.dropdown {
+    position: relative;
+}
+
+.dropdown > .submenu {
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    list-style-type: none;
+    top: 150%;
+    left: 50%; /* Alinha o submenu ao meio do botão */
+    transform: translateX(-50%); /* Ajusta o alinhamento exato */
+    background-color: rgba(var(--cor-terciaria), 0.3);
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    min-width: max-content;
+    transition: opacity 0.7s ease, visibility 0s linear 0.7s;
+    gap: 10px;
+}
+
+.dropdown:hover > .submenu {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.7s ease, visibility 0s linear  0s;
+}
+
+.submenu > li {
+    text-decoration: none;
+}
+
+.submenu > li > a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.5s, color 0.5s, border 0.5s;
+    outline: none;
+    background-color: rgb(var(--cor-terciaria));
+}
+
+.submenu > li > a.current {
+    padding: 10px 20px;
+    background-color: #0099ff;
+    border: none;
+    display: block;
+}
+
+.submenu > li > a:hover, .submenu li a:focus {
+    background-color: rgb(var(--cor-secundaria));
+    color: white;
+    border: none;
+}
+
+.current {
+    box-shadow: 0 0 10px #0099ff;
+}

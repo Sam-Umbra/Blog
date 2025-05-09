@@ -1,0 +1,30 @@
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+    width: 100%;
+    z-index: 1000;
+}
+
+.direitos {
+    font-family: 'Poppins-Thin';
+}
+
+.social-media {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    gap: 10px;
+}
+
+.social-media > a > .icon {
+    color: white;
+    font-size: 30px;
+}
+
+.social-media > a > .icon:hover {
+    color: rgb(var(--cor-primaria));
+    transition: background-color 0.3s, color 0.5s, border 0.3s;
+}

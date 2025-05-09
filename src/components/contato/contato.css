@@ -1,0 +1,121 @@
+main {
+    background-color: black;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    position: relative;
+}
+
+.field-container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(var(--cor-terciaria), 0.3);
+    align-items: center;
+    border-radius: 20px;
+    padding: 80px;
+    gap: 20px;
+    border: 2px solid rgba(var(--cor-terciaria), 0.9);
+    box-shadow: 0px 0px 10px 2px rgb(var(--cor-terciaria));
+    height: auto;
+    width: auto;
+}
+
+.field-container h1 {
+    text-align: center;
+    border-bottom: solid;
+    width: 100%;
+}
+
+.field-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.field {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.field p {
+    font-weight: bold;
+    width: 80px;
+    text-align: left;
+}
+
+.field input {
+    border-radius: 10px;
+    padding: 10px;
+    border: solid transparent;
+    outline: none;
+    transition: transform 0.25s ease-in-out;
+    flex-grow: 1;
+    font-family: 'Poppins-Regular';
+}
+
+.field input:focus {
+    transform: scale(1.1);
+    border: 2px solid rgba(var(--cor-terciaria), 0.9);
+    box-shadow: 0px 0px 10px 2px rgb(var(--cor-terciaria));
+    outline: none;
+}
+
+.message {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    border-top: 3px solid white;
+}
+
+.message textarea {
+    font-family: 'Poppins-Regular';
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 500px;
+    height: 100px;
+    resize: none;
+    border-radius: 10px;
+    padding: 5px;
+    outline: none;
+    transition: box-shadow 0.25s ease-in-out, transform 0.25s ease-in-out;
+}
+
+.message textarea:focus {
+    box-shadow: 0px 0px 5px 5px rgb(var(--cor-terciaria));
+    transform: scale(1.05);
+}
+
+.message button {
+    background-color: rgba(var(--cor-terciaria), 0.9);
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 100%;
+    color: white;
+    font-family: 'Poppins-Bold';
+    text-transform: uppercase;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+}
+
+.message button:hover, .message button:focus {
+    transform: scale(1.05);
+    background-color: white;
+    color: black;
+    box-shadow: 1px 1px 10px 5px rgba(255, 255, 255, 0.5);
+}
