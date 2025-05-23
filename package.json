@@ -1,7 +1,7 @@
 {
-  "name": "blog",
+  "name": "blog-samuel",
   "version": "0.0.0",
-  "homepage": "https://sam-umbra.github.io/blog/",
+  "homepage": "https://sam-umbra.github.io/blog-samuel/",
   "type": "module",
   "scripts": {
     "dev": "vite",
